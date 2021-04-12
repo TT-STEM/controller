@@ -1,5 +1,5 @@
 /**
- * User Buttons for DFRobot gamer:bit Players.
+ * User Buttons for TT Controller Players.
  */
 //%
 enum GamerBitPin {
@@ -17,7 +17,7 @@ enum GamerBitPin {
 }
 
 /**
- * Trigger Events Proposed by DFRobot gamer:bit Players.
+ * Trigger Button Events Proposed by TT Controller Players.
  */
 //%
 enum GamerBitEvent {
@@ -30,7 +30,7 @@ enum GamerBitEvent {
 }
 
 /**
- * Trigger Events Proposed by DFRobot joystick Players.
+ * Trigger Joystick Events Proposed by TT Controller Players.
  */
 //%
 enum JoystickEvent {
@@ -59,7 +59,7 @@ enum JoystickEvent {
 }
 
 /**
- * Functions for DFRobot gamer:bit Players.
+ * Functions for TT Controller Players.
  */
 //% weight=10 color=#DF6721 icon="\uf11b" block="TT Controller"
 namespace controller {
@@ -197,7 +197,7 @@ namespace controller {
     }
 
     /**
-     * Registers code to run when a DFRobot gamer:bit event is detected.
+     * Registers code to run when a TT Controller Button Event is detected.
      */
     //% weight=60
     //% blockGap=50
@@ -213,7 +213,7 @@ namespace controller {
     }
     
     /**
-     * Registers code to run when a DFRobot joystick event is detected.
+     * Registers code to run when a TT Controller Joystick Event is detected.
      */
     //% weight=60
     //% blockGap=50
