@@ -1,6 +1,6 @@
 {
     "name": "controller",
-    "description": "",
+    "description": "This library is TT Controller. Please use this under Trumptech Trainer guidance.",
     "dependencies": {
         "core": "*",
         "radio": "*",
