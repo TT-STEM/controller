@@ -3,16 +3,16 @@
  */
 //%
 enum GamerBitPin {
-    //% block="G-PAD red"
+    //% block="red"
     P15 = DAL.MICROBIT_ID_IO_P15,
-    //% block="G-PAD green"
+    //% block="green"
     P13 = DAL.MICROBIT_ID_IO_P13,
-    //% block="G-PAD blue"
+    //% block="blue"
     P16 = DAL.MICROBIT_ID_IO_P16,
-    //% block="G-PAD yellow"
+    //% block="yellow"
     P14 = DAL.MICROBIT_ID_IO_P14,
 
-    //% block="G-PAD joystick"
+    //% block="joystick"
     P8 = DAL.MICROBIT_ID_IO_P8,
 }
 
@@ -181,7 +181,7 @@ namespace controller {
      * To scan a button whether be triggered : return '1' if pressed; return'0' if not.
      */
     //% weight=70
-    //% blockId=controller_keyState block="button|%button|is pressed"
+    //% blockId=controller_keyState block="|%button|button is pressed"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=4
     export function keyState(button: GamerBitPin): boolean {
         if (!PIN_INIT) { 
@@ -199,7 +199,7 @@ namespace controller {
      */
     //% weight=60
     //% blockGap=50
-    //% blockId=controller_onEvent block="on button|%button|is|%event|"
+    //% blockId=controller_onEvent block="on|%button|button is|%event|"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=4
     //% event.fieldEditor="gridpicker" event.fieldOptions.columns=3
     export function onEvent(button: GamerBitPin, event: GamerBitEvent, handler: Action) {
