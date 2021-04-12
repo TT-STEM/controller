@@ -1,7 +1,7 @@
 #include "pxt.h"
 
 using namespace pxt;
-namespace gamerpad {
+namespace tt_controller {
     bool initialized = false;
 
     //%
