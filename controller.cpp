@@ -1,7 +1,7 @@
 #include "pxt.h"
 
 using namespace pxt;
-namespace tt_controller {
+namespace controller {
     bool initialized = false;
 
     //%
