@@ -8,6 +8,7 @@
     },
     "files": [
         "main.ts",
+        "tt_controller.cpp",
         "README.md"
     ],
     "testFiles": [
