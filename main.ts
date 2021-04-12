@@ -59,8 +59,8 @@ enum JoystickEvent {
 /**
  * Functions for DFRobot gamer:bit Players.
  */
-//% weight=10 color=#DF6721 icon="\uf11b" block="controller"
-namespace controller {
+//% weight=10 color=#DF6721 icon="\uf11b" block="TT Controller"
+namespace tt_controller {
     let PIN_INIT = 0;
     
     let p1 = 0
@@ -181,7 +181,7 @@ namespace controller {
      * To scan a button whether be triggered : return '1' if pressed; return'0' if not.
      */
     //% weight=70
-    //% blockId=controller_keyState block="button|%button|is pressed"
+    //% blockId=tt_controller_keyState block="button|%button|is pressed"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=4
     export function keyState(button: GamerBitPin): boolean {
         if (!PIN_INIT) { 
@@ -199,7 +199,7 @@ namespace controller {
      */
     //% weight=60
     //% blockGap=50
-    //% blockId=controller_onEvent block="on button|%button|is|%event|"
+    //% blockId=tt_controller_onEvent block="on button|%button|is|%event|"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=4
     //% event.fieldEditor="gridpicker" event.fieldOptions.columns=3
     export function onEvent(button: GamerBitPin, event: GamerBitEvent, handler: Action) {
@@ -215,7 +215,7 @@ namespace controller {
      */
     //% weight=60
     //% blockGap=50
-    //% blockId=controller_onJoystickEvent block="on joystick is|%event|"
+    //% blockId=tt_controller_onJoystickEvent block="on joystick is|%event|"
     //% event.fieldEditor="gridpicker" event.fieldOptions.columns=3
     export function onJoystickEvent(event: JoystickEvent, handler: Action) {
         init();
@@ -229,7 +229,7 @@ namespace controller {
      * Vibrating motor switch.
      */
     //% weight=50
-    //% blockId=controller_vibratorMotor block="Vibrator motor switch|%index|"
+    //% blockId=tt_controller_vibratorMotor block="Vibrator motor switch|%index|"
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     export function vibratorMotor(index: Vibrator): void {
         vibratorMotorSpeed(<number>index);
@@ -241,7 +241,7 @@ namespace controller {
      */
     //% weight=30
     //% blockGap=50
-    //% blockId=controller_vibratorMotorSpeed block="Vibrator motor intensity|%degree|"
+    //% blockId=tt_controller_vibratorMotorSpeed block="Vibrator motor intensity|%degree|"
     //% degree.min=0 degree.max=255
     export function vibratorMotorSpeed(degree: number): void {
         if (!PIN_INIT) { 
