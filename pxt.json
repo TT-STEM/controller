@@ -8,6 +8,7 @@
     },
     "files": [
         "main.ts",
+        "controller.cpp",
         "README.md"
     ],
     "testFiles": [
