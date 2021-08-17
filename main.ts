@@ -183,7 +183,7 @@ namespace controller {
     /**
      * To scan a button whether be triggered : return '1' if pressed; return'0' if not.
      */
-    //% group=Joystick & Buttons
+    //% group=Joystick_&_Buttons
     //% weight=98
     //% blockId=controller_keyState block="|%button|button is pressed"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=4
@@ -201,7 +201,7 @@ namespace controller {
     /**
      * Registers code to run when a TT Controller Button Event is detected.
      */
-    //% group=Joystick & Buttons
+    //% group=Joystick_&_Buttons
     //% weight=100
     //% blockGap=50
     //% blockId=controller_onEvent block="on|%button|button is|%event|"
@@ -218,7 +218,7 @@ namespace controller {
     /**
      * Registers code to run when a TT Controller Joystick Event is detected.
      */
-    //% group=Joystick & Buttons
+    //% group=Joystick_&_Buttons
     //% weight=99
     //% blockGap=50
     //% blockId=controller_onJoystickEvent block="on joystick is|%event|"
