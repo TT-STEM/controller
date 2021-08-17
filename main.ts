@@ -62,7 +62,7 @@ enum JoystickEvent {
  * Functions for TT Controller Players.
  */
 //% weight=10 color=#DF6721 icon="\uf11b" block="TT Controller"
-//% groups='["Joystick & Buttons", "Vibrator"]'
+//% groups='["Joystick_&_Buttons", "Vibrator"]'
 namespace controller {
     let PIN_INIT = 0;
     
