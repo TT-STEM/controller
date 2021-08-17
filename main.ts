@@ -62,6 +62,7 @@ enum JoystickEvent {
  * Functions for TT Controller Players.
  */
 //% weight=10 color=#DF6721 icon="\uf11b" block="TT Controller"
+//% groups='["Joystick_&_Buttons", "Vibrator"]'
 namespace controller {
     let PIN_INIT = 0;
     
@@ -182,7 +183,8 @@ namespace controller {
     /**
      * To scan a button whether be triggered : return '1' if pressed; return'0' if not.
      */
-    //% weight=70
+    //% group=Joystick_&_Buttons
+    //% weight=98
     //% blockId=controller_keyState block="|%button|button is pressed"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=4
     export function keyState(button: GamerBitPin): boolean {
@@ -199,7 +201,8 @@ namespace controller {
     /**
      * Registers code to run when a TT Controller Button Event is detected.
      */
-    //% weight=60
+    //% group=Joystick_&_Buttons
+    //% weight=100
     //% blockGap=50
     //% blockId=controller_onEvent block="on|%button|button is|%event|"
     //% button.fieldEditor="gridpicker" button.fieldOptions.columns=4
@@ -215,7 +218,8 @@ namespace controller {
     /**
      * Registers code to run when a TT Controller Joystick Event is detected.
      */
-    //% weight=60
+    //% group=Joystick_&_Buttons
+    //% weight=99
     //% blockGap=50
     //% blockId=controller_onJoystickEvent block="on joystick is|%event|"
     //% event.fieldEditor="gridpicker" event.fieldOptions.columns=3
@@ -230,6 +234,7 @@ namespace controller {
     /**
      * Vibrating motor switch.
      */
+    //% group=Vibrator
     //% weight=50
     //% blockId=controller_vibratorMotor block="Vibrator motor switch|%index|"
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
@@ -241,6 +246,7 @@ namespace controller {
     /**
      * Vibration motor speed setting, adjustable range 0~255.
      */
+    //% group=Vibrator
     //% weight=30
     //% blockGap=50
     //% blockId=controller_vibratorMotorSpeed block="Vibrator motor intensity|%degree|"
