@@ -78,7 +78,8 @@ namespace HC_controller {
         if (JOY_INIT == 1) {
             p1 = pins.analogReadPin(AnalogPin.P1)
             p2 = pins.analogReadPin(AnalogPin.P2)
-
+            
+            
             if (p2 > 683) {
                 if (p1 > 683 && JOY_STATE != 3) {
                     control.raiseEvent(
@@ -118,6 +119,7 @@ namespace HC_controller {
                     JOY_STATE = 5
                     control.waitMicros(wait_time)
                 } else if (p1 < 344 && JOY_STATE != 4) {
+                    basic.showNumber(4)
                     control.raiseEvent(
                     EventBusSource.MES_DPAD_CONTROLLER_ID,
                     EventBusValue.MES_DPAD_BUTTON_2_DOWN
