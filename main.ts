@@ -1,5 +1,5 @@
 /**
- * User Buttons for HC Controller Players.
+ * User Buttons for TT Controller Players.
  */
 //%
 enum GamerBitPin {
@@ -17,7 +17,7 @@ enum GamerBitPin {
 }
 
 /**
- * Trigger Button Events Proposed by HC Controller Players.
+ * Trigger Button Events Proposed by TT Controller Players.
  */
 //%
 enum GamerBitEvent {
@@ -30,7 +30,7 @@ enum GamerBitEvent {
 }
 
 /**
- * Trigger Joystick Events Proposed by HC Controller Players.
+ * Trigger Joystick Events Proposed by TT Controller Players.
  */
 //%
 enum JoystickEvent {
@@ -59,11 +59,11 @@ enum JoystickEvent {
 }
 
 /**
- * Functions for HC Controller Players.
+ * Functions for TT Controller Players.
  */
-//% weight=10 color=#DF6721 icon="\uf11b" block="HC Controller"
+//% weight=10 color=#DF6721 icon="\uf11b" block="TT Controller"
 //% groups='["Joystick_&_Buttons", "Vibrator"]'
-namespace HC_controller {
+namespace TT_Controller {
     let PIN_INIT = 0;
     
     let p1 = 0
@@ -200,7 +200,7 @@ namespace HC_controller {
     }
 
     /**
-     * Registers code to run when a HC Controller Button Event is detected.
+     * Registers code to run when a TT Controller Button Event is detected.
      */
     //% group=Joystick_&_Buttons
     //% weight=100 blockGap=15
@@ -216,7 +216,7 @@ namespace HC_controller {
     }
     
     /**
-     * Registers code to run when a HC Controller Joystick Event is detected.
+     * Registers code to run when a TT Controller Joystick Event is detected.
      */
     //% group=Joystick_&_Buttons
     //% weight=99 blockGap=15
